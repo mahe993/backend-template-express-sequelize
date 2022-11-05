@@ -8,7 +8,9 @@ ES6 Boilerplate for express/sequelize app
 4. change require syntax to import
 5. PascalCase name => Name in "class <%= name %>", "<%= name %>.init" and "return <%= name %>"
 6. create Postgres db. run following command in terminal:
+   ```console
    docker run --name postgres-db -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+   ```
 
 <!-- Command explaination -->
 
