@@ -22,6 +22,6 @@ ES6 Boilerplate for express/sequelize app
 <!-- End command explaination -->
 
 7. insert same --name and POSTGRES_PASSWORD values into .env file
-8. npx sequelize db:create -> model:generate --name test --attributes test:string --underscored
-9. ensure the model generated is in ES6 format i.e. using import/export default syntax as well as PascalCase class names, lowercased model name.
+8. npx sequelize db:create -> model:generate --name tester --attributes test:string --underscored
+9. ensure the model generated is in ES6 format i.e. using import/export default syntax as well as PascalCase class names, lowercased model name. (compare files to example test files if unsure)
 10. change all migrations/seeders files to .cjs extension
