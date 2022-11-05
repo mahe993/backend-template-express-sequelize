@@ -4,11 +4,11 @@ ES6 Boilerplate for express/sequelize app
 
 1. clone repo into desired local directory
 2. npm i
-3. open node_modules/sequelize-cli/lib/assets/models/model.js
+3. open `node_modules/sequelize-cli/lib/assets/models/model.js`
 4. change require syntax to import
-5. PascalCase name => Name in "class <%= name %>", "<%= name %>.init" and "return <%= name %>"
+5. PascalCase name => Name in `class <%= name %>`, `<%= name %>.init` and `return <%= name %>`
 6. create Postgres db. run following command in terminal:
-   ```console
+   ```javascript
    docker run --name postgres-db -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
    ```
 
@@ -23,7 +23,7 @@ ES6 Boilerplate for express/sequelize app
 
 <!-- End command explaination -->
 
-7. insert same --name and POSTGRES_PASSWORD values into .env file
-8. npx sequelize db:create -> model:generate --name tester --attributes test:string --underscored
+7. insert same --name and POSTGRES_PASSWORD values into `.env` file
+8. `npx sequelize db:create` -> `model:generate --name tester --attributes test:string --underscored`
 9. ensure the model generated is in ES6 format i.e. using import/export default syntax as well as PascalCase class names, lowercased model name. (compare files to example test files if unsure)
-10. change all migrations/seeders files to .cjs extension
+10. change all migrations/seeders files to `.cjs` extension
